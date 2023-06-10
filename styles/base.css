@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #25adb7;
-    --second-color: #4B77E7;
+    --primary-color: #115055;
+    --second-color: #143790;
     --third-color: #F6D024;
 }
 
@@ -29,7 +29,12 @@ header img {
     max-width: 80px;
     margin: 20px;
     border-radius: 10px;
-    box-shadow: 5px 10px 10px var(--second-color);
+    box-shadow: 0 0 20px var(--second-color);
+}
+
+header img:hover {
+    scale: 1.1;
+    transition: 1s;
 }
 
 /* Header ends */
@@ -57,6 +62,9 @@ nav ul li {
 
 nav ul li a {
     color: #ffffff;
+}
+
+li a {
     text-decoration: none;
 }
 
@@ -83,7 +91,7 @@ section {
 }
 
 section h3 {
-    background-color: #25adb7;
+    background-color: var(--primary-color);
     color: #ffffff;
     margin-top: 0px;
     text-align: center;
