@@ -1,5 +1,107 @@
 :root {
-    --primary-color: #b92d2d;
-    --second-color: #0975e0;
-    --third-color: #ffffff;
+    --primary-color: #25adb7;
+    --second-color: #4B77E7;
+    --third-color: #F6D024;
 }
+
+body {
+    display: grid;
+    grid-template: auto auto 1fr auto / 1fr;
+}
+
+/* Header starts */
+header {
+    display: grid;
+    background-color: var(--primary-color);
+    max-height: 120px;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+header h1 {
+    grid-column: 2/3;
+    padding: 20px;
+    color: #ffffff;
+}
+
+header img {
+    justify-self: end;
+    grid-column: 1/2;
+    max-width: 80px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px var(--second-color);
+}
+
+/* Header ends */
+
+ul {
+    list-style: none;
+}
+
+/* Navbar starts */
+nav {
+    background-color: var(--second-color);
+    color: #ffffff;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: var(--third-color);
+}
+
+/* Navbar ends */
+
+/* Main starts */
+main {
+    margin: 1rem auto;
+    display: grid;
+    grid-template: auto auto 1fr 1fr / 1fr;
+    gap: 1rem;
+}
+
+section {
+    max-width: 400px;
+    padding: 0px 0px 10px 0px;
+    box-shadow: 0px 0px 10px #bfbfbf;
+    border-radius: 15px;
+    border: #4B77E7 solid 1px;
+}
+
+section h3 {
+    background-color: #25adb7;
+    color: #ffffff;
+    margin-top: 0px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.card {
+    margin: 20px;
+}
+
+/* Main ends */
+
+/* Footer starts */
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Footer ends */
