@@ -61,7 +61,7 @@ nav ul li a {
 }
 
 nav ul li:hover {
-    background-color: var(--third-color);
+    background-color: #1D52D7;
 }
 
 /* Navbar ends */
