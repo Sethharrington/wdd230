@@ -90,6 +90,10 @@ section {
     border: #4B77E7 solid 1px;
 }
 
+section ul {
+    padding: 5px 20px;
+}
+
 section h3 {
     background-color: var(--primary-color);
     color: #ffffff;
