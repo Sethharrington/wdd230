@@ -58,6 +58,12 @@ https://dev.to/imiahazel/8-fundamental-principles-of-effective-web-design-196l
 
 Reference https://www.youtube.com/watch?v=mOA0WH00reA
 
+### Favicon
+
+The Favicon ("Fav-icon") is a small image file that can be 16px X 16px, however Google development recommends multiples of 48px square.
+Most web image file formats are supported, however, the preferred .ico format is what we will use in the course.
+https://www.favicon.cc/
+
 ## Week 03
 
 ## Week 04
