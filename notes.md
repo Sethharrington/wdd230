@@ -64,6 +64,12 @@ The Favicon ("Fav-icon") is a small image file that can be 16px X 16px, however 
 Most web image file formats are supported, however, the preferred .ico format is what we will use in the course.
 https://www.favicon.cc/
 
+### Meta Tags
+
+https://css-tricks.com/essential-meta-tags-social-media/
+Facebook Validator: https://developers.facebook.com/tools/debug/
+Twitter: https://cards-dev.twitter.com/validator
+
 ## Week 03
 
 ## Week 04
