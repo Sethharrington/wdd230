@@ -1,0 +1,197 @@
+:root {
+    --primary-color: #005227;
+    --second-color: #911812;
+    --third-color: #a0a003;
+}
+
+body {
+    display: grid;
+    margin: 0;
+    grid-template: auto auto auto 1fr auto / 1fr;
+}
+
+
+/* Header starts */
+header {
+    display: grid;
+    background-color: var(--primary-color);
+    max-height: 120px;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+header h1 {
+    grid-column: 2/3;
+    padding: 20px;
+    color: #ffffff;
+}
+
+header img {
+    justify-self: end;
+    grid-area: 1/1/2/2;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--second-color);
+}
+
+#mode,
+#menu {
+    align-self: center;
+    justify-self: center;
+    max-height: 3rem;
+    max-width: 3rem;
+    cursor: pointer;
+    margin: 10px;
+    top: 1rem;
+    position: absolute;
+    font-size: 1.5rem;
+    background-color: #eee;
+}
+
+#mode {
+    right: 3.5rem;
+}
+
+#menu {
+    color: #000;
+    right: 0.5rem;
+}
+
+/* Header ends */
+
+ul {
+    list-style: none;
+}
+
+/* Navbar starts */
+nav {
+    background-color: var(--second-color);
+    color: #ffffff;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul li a {
+    color: #ffffff;
+}
+
+li a {
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: var(--third-color);
+}
+
+/* Navbar ends */
+
+/* Main starts */
+main {
+    display: grid;
+    grid-template: auto auto 1fr 1fr / 1fr;
+    gap: 1rem;
+    margin: 1rem auto;
+}
+
+main h2 {
+    grid-column: 1/3;
+}
+
+.banner {
+    grid-column: 1/2;
+    max-width: 100vw;
+    background-color: var(--primary-color);
+}
+
+.banner-img {
+    max-width: inherit;
+}
+
+
+
+section {
+    max-width: 400px;
+    padding: 0px 0px 10px 0px;
+    box-shadow: 0px 0px 10px #bfbfbf;
+    border-radius: 15px;
+    border: #4B77E7 solid 1px;
+}
+
+section ul {
+    padding: 5px 20px;
+}
+
+section h3 {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    margin-top: 0px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.card {
+    margin: 20px;
+}
+
+/* Main ends */
+
+/* Footer starts */
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Footer ends */
+
+/* Hamburguer button CSS */
+/* small view navigation */
+
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+.active::before {
+    content: "📍 ";
+}
+
+/* Hamburguer button CSS ends */
