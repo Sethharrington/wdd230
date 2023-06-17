@@ -26,15 +26,34 @@ header h1 {
 header img {
     justify-self: end;
     grid-column: 1/2;
-    max-width: 80px;
+    width: 80px;
+    height: 80px;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px var(--second-color);
 }
 
-header img:hover {
-    scale: 1.1;
-    transition: 1s;
+#mode,
+#menu {
+    align-self: center;
+    justify-self: center;
+    max-height: 3rem;
+    max-width: 3rem;
+    cursor: pointer;
+    margin: 10px;
+    top: 1rem;
+    position: absolute;
+    font-size: 1.5rem;
+    background-color: #eee;
+}
+
+#mode {
+    right: 3.5rem;
+}
+
+#menu {
+    color: #000;
+    right: 0.5rem;
 }
 
 /* Header ends */
@@ -117,3 +136,44 @@ footer {
 }
 
 /* Footer ends */
+
+/* Hamburguer button CSS */
+/* small view navigation */
+
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+.active::before {
+    content: "📍 ";
+}
+
+/* Hamburguer button CSS ends */

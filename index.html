@@ -30,21 +30,23 @@
     <meta name="twitter:image:alt" content="A picture of Concepcion de Tres Rios">
 
     <!--  Non-Essential, But Required for Analytics -->
-    <meta property="fb:app_id" content="your_app_id" />
-    <meta name="twitter:site" content="@website-username">
+    <!-- <meta property="fb:app_id" content="your_app_id" />
+    <meta name="twitter:site" content="@website-username"> -->
 </head>
 
 <body>
     <header>
         <img src="./images/perfil-redbricks_square.jpeg" alt="Seth Harrington photo">
         <h1>Seth Harrington</h1>
+        <button id="mode" aria-label="darkMode"> ☑️</button>
+        <button id="menu" aria-label="hambuerguerButton"></button>
     </header>
     <nav>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Chamber</a></li>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
             <li><a href="./week01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="">Form</a></li>
+            <li><a href="#">Form</a></li>
         </ul>
     </nav>
     <main>
@@ -62,11 +64,11 @@
                     <a href="https://codepen.io/Sethharrington/pen/GRwoYYG">Hamburguer button</a> |
                     <a href="./week02/bom.html">BOM</a>
                 </li>
-                <li>Week 03: <a href="./week03/"></a></li>
-                <li>Week 04: <a href="./week04/"></a></li>
-                <li>Week 05: <a href="./week05/"></a></li>
-                <li>Week 06: <a href="./week06/"></a></li>
-                <li>Week 07: <a href="./week07/"></a></li>
+                <li>Week 03: <a href="./week03/">Activity</a></li>
+                <li>Week 04: <a href="./week04/">Activity</a></li>
+                <li>Week 05: <a href="./week05/">Activity</a></li>
+                <li>Week 06: <a href="./week06/">Activity</a></li>
+                <li>Week 07: <a href="./week07/">Activity</a></li>
             </ul>
         </section>
         <section class="card">
@@ -79,6 +81,8 @@
     </footer>
 
     <script src="./scripts/getDates.js"></script>
+    <script src="./scripts/hambuerguerButton.js"></script>
+    <script src="./scripts/darkMode.js"></script>
 </body>
 
 </html>
