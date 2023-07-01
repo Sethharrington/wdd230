@@ -37,7 +37,7 @@
 
 <body>
     <header>
-        <img src="./images/perfil-redbricks_square.jpeg" alt="Seth Harrington photo">
+        <img src="./images/perfil-redbricks_square.webp" alt="Seth Harrington photo">
         <h1>Seth Harrington</h1>
         <button id="mode" aria-label="darkMode"> ☑️</button>
         <button id="menu" aria-label="hambuerguerButton"></button>
@@ -51,6 +51,16 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <img src="images/hero-large.webp" alt="Arizona Mesa Temple" width="960" height="480">
+            </picture>
+            <div class="herolabel">
+                <p>Arizona Mesa Temple</p>
+            </div>
+        </div>
+
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>
@@ -76,7 +86,12 @@
         </section>
         <section class="card">
             <h3>Information</h3>
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
         </section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27608.901837325007!2d-83.99817776818664!3d9.926585547712763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scr!4v1688230140242!5m2!1sen!2scr"
+            title="Concepcion de Tres Rios" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <p>&copy; Seth Harrington Costa Rica</p>
@@ -86,6 +101,7 @@
     <script src="./scripts/getDates.js"></script>
     <script src="./scripts/hambuerguerButton.js"></script>
     <script src="./scripts/darkMode.js"></script>
+    <script src="./scripts/visitsCounter.js"></script>
 </body>
 
 </html>
