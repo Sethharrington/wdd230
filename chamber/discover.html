@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concepcion de Tres Rios Chamber of Commerce</title>
+
+    <meta name="description" content="This name represents the city of Concepcion where the chamber operates.">
+    <meta name="author" content="Seth Harrington">
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Seth Harrington - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/flag.png">
+    <meta property="og:url" content="https://sethharrington.github.io/wdd230/chamber/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description"
+        content="WDD 230 - Web Frontend Development Seth Ben Gabriel Harrington Arraez course assignment portal">
+    <meta property="og:site_name" content="Seth Harrington - WDD 230">
+    <meta name="twitter:image:alt" content="A picture of Concepcion de Tres Rios">
+
+    <!--  Non-Essential, But Required for Analytics -->
+    <!-- <meta property="fb:app_id" content="your_app_id" />
+        <meta name="twitter:site" content="@website-username"> -->
+</head>
+
+<body>
+    <header>
+        <img src="./images/shield.png" alt="Seth Harrington photo">
+        <h1>Seth Harrington</h1>
+        <button id="mode" aria-label="darkMode"> ☑️</button>
+        <button id="menu" aria-label="hambuerguerButton"></button>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Directory</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <picture>
+            <source media="(max-width: 500px)" srcset="./images/banner-small.webp">
+            <img src="./images/banner-large.webp" alt="Concepcion Chamber of Comerce" width="1500" height="750">
+        </picture>
+        <button>Join us</button>
+    </div>
+    <main>
+        <div class="left-sidebar">
+            <h2>Concepcion de Tres Rios Chamber of Commerce</h2>
+            <section class="card">
+                <h3>New opportunities</h3>
+                <p>Hey, we are so grateful to have you here.<br>
+                    See how we have grown over the years
+                </p>
+            </section>
+            <section class="card">
+                <h3>Last visit</h3>
+                <p>
+                    <span id="lastVisit"></span>
+                    <span id="lastVisitDate"></span>
+                </p>
+            </section>
+            <section class="card">
+                <h3>Calendar</h3>
+                <iframe
+                    src="https://calendar.google.com/calendar/embed?src=es.cr%23holiday%40group.v.calendar.google.com&ctz=America%2FCosta_Rica"
+                    style="border: 0" width="800" height="380" frameborder="0" scrolling="no" loading="lazy"></iframe>
+            </section>
+            <section class="card">
+                <h3>Map</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.7673327051325!2d-83.98548837570517!3d9.907883673296183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e11a72b77add%3A0xe175b7611427f6ab!2sMunicipalidad%20de%20La%20Uni%C3%B3n!5e0!3m2!1ses-419!2scr!4v1688261249016!5m2!1ses-419!2scr"
+                    width="600" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+        <div class="discover-main" contenteditable>
+            <div class="gallery">
+                <div class="gallery-label">
+                    <p>Lilly's Cup entrepeneurship</p>
+                </div>
+                <picture>
+                    <source media="(max-width: 500px )" srcset="./images/startup-small.webp">
+                    <img src="./images/startup-large.webp" alt="Entrepeneurship cup" loading="lazy" width="600"
+                        height="400">
+                </picture>
+            </div>
+            <div class="gallery">
+                <div class="gallery-label">
+                    <p>Chamber of Commerce meeting</p>
+                </div>
+                <picture>
+                    <source media="(max-width: 500px )" srcset="./images/meeting-small.webp">
+                    <img src="./images/meeting-large.webp" alt="Business meeting" loading="lazy" width="600"
+                        height="400">
+                </picture>
+            </div>
+            <div class="gallery">
+                <div class="gallery-label">
+                    <p>Fred's Restaurant</p>
+                </div>
+                <picture>
+                    <source media="(max-width: 500px )" srcset="./images/restaurant-small.webp">
+                    <img src="./images/restaurant-large.webp" alt="Emprendimiento de tazas" loading="lazy" width="600"
+                        height="400">
+                </picture>
+            </div>
+            <div class="gallery">
+                <div class="gallery-label">
+                    <p>Alfred's Bakery</p>
+                </div>
+                <picture>
+                    <source media="(max-width: 500px )" srcset="./images/bakery-small.webp">
+                    <img src="./images/bakery-large.webp" alt="Alfred's bakery" loading="lazy" width="600" height="400">
+                </picture>
+            </div>
+            <div class="gallery">
+                <div class="gallery-label">
+                    <p>Chamber reports</p>
+                </div>
+                <picture>
+                    <source media="(max-width: 500px )" srcset="./images/reports-small.webp">
+                    <img src="./images/reports-large.webp" alt="" loading="lazy" width="600" height="400">
+                </picture>
+            </div>
+            <div class="gallery">
+                <div class="gallery-label">
+                    <p>Lauren's Baskets</p>
+                </div>
+                <picture>
+                    <source media="(max-width: 500px )" srcset="./images/baskets-small.webp">
+                    <img src="./images/baskets-large.webp" alt="Chamber reports" loading="lazy" width="600"
+                        height="400">
+                </picture>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; Seth Harrington Costa Rica</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="./scripts/getDates.js"></script>
+    <script src="./scripts/hambuerguerButton.js"></script>
+    <script src="./scripts/darkMode.js"></script>
+    <script src="./scripts/lastVisit.js"></script>
+</body>
+
+</html>

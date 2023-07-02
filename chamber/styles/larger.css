@@ -1,4 +1,4 @@
-@media (min-width:640px) {
+@media (min-width:500px) {
 
     /* Navbar starts */
     nav ul {
@@ -10,13 +10,21 @@
     }
 
     /* Navbar ends */
-    /* Banner */
-    .banner {
-        max-width: 98.5vw;
+    /* Banner starts */
+    .banner button {
+
+        bottom: 20px;
+        right: 50px;
+        border-radius: 15px;
+        padding: 1rem;
+        font-size: 2rem;
     }
+
+
 
     /* Banner ends */
     /* Main starts */
+
     main {
         grid-template-columns: 1fr 1fr;
     }
@@ -25,14 +33,28 @@
         grid-column: 1/3;
     }
 
-
     section {
         box-shadow: 0px 0px 20px #bfbfbf;
     }
 
-
     .card {
         min-width: 250px;
+    }
+
+    .left-sidebar {
+        grid-column: 1/2;
+    }
+
+    .discover-main {
+        grid-column: 2/3;
+    }
+
+    .gallery img {
+        border-radius: 10%;
+    }
+
+    .gallery:hover {
+        scale: 1.1;
     }
 
     /* Main ends */
@@ -69,4 +91,8 @@
 
     /* Hamburguer button ends*/
 
+    button:hover {
+        box-shadow: 0 0 1rem #fff;
+        scale: 1.1;
+    }
 }
