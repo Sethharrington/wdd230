@@ -197,7 +197,7 @@ section iframe {
     color: #ffffff;
     background: var(--primary-color);
     border-radius: 20px;
-    opacity: 0.75;
+    opacity: 0.85;
 }
 
 .gallery-label p {

@@ -53,8 +53,8 @@
         border-radius: 10%;
     }
 
-    .gallery:hover {
-        scale: 1.1;
+    .gallery img:hover {
+        box-shadow: 0 0 1rem #000;
     }
 
     /* Main ends */
@@ -93,6 +93,5 @@
 
     button:hover {
         box-shadow: 0 0 1rem #fff;
-        scale: 1.1;
     }
 }
